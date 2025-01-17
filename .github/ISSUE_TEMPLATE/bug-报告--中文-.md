@@ -33,5 +33,4 @@ assignees: ''
 
 **额外信息**
 <!-- 如果有日志和崩溃报告,请贴出来. 它们可以在对应的 .minecraft/logs 和 .minecraft/crash-reports 文件夹下找到. 
-如果你的问题只会在某个特定世界中发生, 请上传它. 
 -->

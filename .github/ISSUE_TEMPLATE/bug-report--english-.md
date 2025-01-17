@@ -33,5 +33,4 @@ Example:
 
 **Additional context**
 <!-- Add logs and crash-reports if there is any. they are found under your .minecraft/logs and .minecraft/crash-reports folders, respectively. 
-If your bug only occurs in a specific world, please upload it. 
 -->
