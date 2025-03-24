@@ -63,3 +63,6 @@ Fixed a crash related to a MTEPatches tweak on BC Pipes
 Added links about the modpack into it.  
 Added a tutorial toast: Check the Quests.  
 Fixed MTE Tweaks causing crashes on dedicated server.  
+# 0.1.10
+Replaced GlobalGameRules with MTETweaks's new Default gamerules feature  
+Minor recipe tweaks  
