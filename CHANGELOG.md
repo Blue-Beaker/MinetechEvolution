@@ -66,3 +66,6 @@ Fixed MTE Tweaks causing crashes on dedicated server.
 # 0.1.10
 Replaced GlobalGameRules with MTETweaks's new Default gamerules feature  
 Minor recipe tweaks  
+# 0.1.11
+Updated MTE Galactic Tweaks, added a QoL tweak to the slimeling GUI.  
+Added dedicated server support.  
