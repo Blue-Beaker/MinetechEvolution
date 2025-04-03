@@ -72,4 +72,5 @@ Added dedicated server support.
 # 0.1.12
 Added compatible items to forestry backpacks  
 Fixed recipes staging  
+Fixed a bug in script
 Replaced GC buckets with forge ones because GC ones have bugs when stacked. Only affects filling fluids with buckets, Existing GC buckets are unaffected.  
