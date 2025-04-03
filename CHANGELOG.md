@@ -69,3 +69,7 @@ Minor recipe tweaks
 # 0.1.11
 Updated MTE Galactic Tweaks, added a QoL tweak to the slimeling GUI.  
 Added dedicated server support.  
+# 0.1.12
+Added compatible items to forestry backpacks  
+Fixed recipes staging  
+Replaced GC buckets with forge ones because GC ones have bugs when stacked. Only affects filling fluids with buckets, Existing GC buckets are unaffected.  
