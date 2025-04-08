@@ -74,3 +74,8 @@ Added compatible items to forestry backpacks
 Fixed recipes staging  
 Fixed a bug in script
 Replaced GC buckets with forge ones because GC ones have bugs when stacked. Only affects filling fluids with buckets, Existing GC buckets are unaffected.  
+# 0.1.13
+Added various quests  
+Added a few recipes. Chapter 3 may by completable now, but it may have breaking changes before Minetech Evolution 0.2  
+Updated MTE Tweaks, including a better BC to FE adaptation  
+Replaced some unneeded mods  
