@@ -77,5 +77,12 @@ Replaced GC buckets with forge ones because GC ones have bugs when stacked. Only
 # 0.1.13
 Added various quests  
 Added a few recipes. Chapter 3 may by completable now, but it may have breaking changes before Minetech Evolution 0.2  
-Updated MTE Tweaks, including a better BC to FE adaptation  
+Updated MTE Patches, including a better BC to FE adaptation  
 Replaced some unneeded mods  
+# 0.1.14
+Updated MTE Patches to include:  
+  ProjectRed - Breaking Speed Fix  
+  Forestry - MultiFarm Soil Replacement Fix  
+Added quit menu which asks for confirmation when quitting.  
+Updated JEI UU Assembler, providing info for IC2 crop production   
+Updated more mods  
