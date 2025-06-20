@@ -95,3 +95,4 @@ Added side quests for various items
 Updated MTE Patches to include:  
   Storage Drawers QoL - Unmark slots  
 Added AppliedSync: better AE2-JEI search bar synchronization  
+Fixed a client-side crash for IC2 message fix  
