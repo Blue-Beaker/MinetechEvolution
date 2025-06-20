@@ -91,3 +91,7 @@ Update BuildCraft
 Update MTE Patches  
 Replace TOP with TOPCE  
 Added side quests for various items  
+# 0.1.16
+Updated MTE Patches to include:  
+  Storage Drawers QoL - Unmark slots  
+Added AppliedSync: better AE2-JEI search bar synchronization  
