@@ -96,3 +96,9 @@ Updated MTE Patches to include:
   Storage Drawers QoL - Unmark slots  
 Added AppliedSync: better AE2-JEI search bar synchronization  
 Fixed a client-side crash for IC2 message fix  
+# 0.1.17
+Migrated most IC2 recipes to Crafttweaker, enhancing cross-mod compatibility  
+Hide some uncraftable recipes in the first chapter to prevent confusion  
+Updated MTE Galactic Tweaks to fix a savefile-crashing bug related to inventory size  
+Updated MTE Patches for crop stick trample prevention  
+Added Electric Wrench (New)  
