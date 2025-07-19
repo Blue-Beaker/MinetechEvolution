@@ -100,5 +100,9 @@ Fixed a client-side crash for IC2 message fix
 Migrated most IC2 recipes to Crafttweaker, enhancing cross-mod compatibility  
 Hide some uncraftable recipes in the first chapter to prevent confusion  
 Updated MTE Galactic Tweaks to fix a savefile-crashing bug related to inventory size  
-Updated MTE Patches for crop stick trample prevention  
+Updated MTE Patches:
+- Crop stick trample prevention
+- Performance tweak for BoP
+- Fix Forestry's BC compat module  
+
 Added Electric Wrench (New)  
