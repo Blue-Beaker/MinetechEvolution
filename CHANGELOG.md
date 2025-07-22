@@ -106,3 +106,4 @@ Updated MTE Patches:
 - Fix Forestry's BC compat module  
 
 Added Electric Wrench (New)  
+Fixed Thermal machines doesn't render correctly on first launch of the Modpack
