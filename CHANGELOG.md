@@ -108,3 +108,4 @@ Updated MTE Patches:
 Added Electric Wrench (New)  
 Fixed Thermal machines doesn't render correctly on first launch of the Modpack  
 Fixed difficulty setting messing up with worlds  
+Added additional information when using cropnalyzer on crop sticks
