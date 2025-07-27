@@ -110,5 +110,6 @@ Fixed Thermal machines doesn't render correctly on first launch of the Modpack
 Fixed difficulty setting messing up with worlds  
 Added additional information when using cropnalyzer on crop sticks  
 
-# 0.1.18 (Not done)
+# 0.1.18
 Fixed some railcraft recipes eating fluid containers  
+Updated forestry to fix broken carpenter crafting behaviour  
