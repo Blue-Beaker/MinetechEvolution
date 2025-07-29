@@ -113,3 +113,7 @@ Added additional information when using cropnalyzer on crop sticks
 # 0.1.18
 Fixed some railcraft recipes eating fluid containers  
 Updated forestry to fix broken carpenter crafting behaviour  
+
+# 0.1.19
+Fix missing recipes caused by IC2 recipe migration in 0.1.17  
+Fix charged items crafting (hope this will no longer have bugs)  
