@@ -114,6 +114,7 @@ Added additional information when using cropnalyzer on crop sticks
 Fixed some railcraft recipes eating fluid containers  
 Updated forestry to fix broken carpenter crafting behaviour  
 
-# 0.1.19
+# 0.1.18-fix1
+This version of server are compatible with 0.1.18 clients! However a client update is still encouraged as new recipes wont show in JEI if client is not up to date  
 Fix missing recipes caused by IC2 recipe migration in 0.1.17  
 Fix charged items crafting (hope this will no longer have bugs)  
