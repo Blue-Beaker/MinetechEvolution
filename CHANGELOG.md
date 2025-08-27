@@ -130,3 +130,4 @@ Reduced resource/energy requirements in several rocket recipes
 Reduced requirements to unlock the Creative watering can: Now only 50/57 agricultural products is needed  
 Removed baubles keybind by default  
 Fixed various bugs  
+Updated Just Extra Drags to 1.1.0  
