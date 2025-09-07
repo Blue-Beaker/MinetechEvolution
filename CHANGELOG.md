@@ -122,9 +122,10 @@ Fix charged items crafting (hope this will no longer have bugs)
 When in multiplayer, this patch is only needed on server-side.  
 Fix inserting items to ProjectRed Filtered Importer causing crash  
 
-# 0.1.19(WIP)
+# 0.1.19
 Add Steve's Cart Reborn, unlocks at Chapter 2 but not required for the main chapter  
 Add Morph Overlay, QoL for Akashic Tome and Morph-O-Tool  
+Add Omniwand, a substitution of Morph-O-Tool  
 Patch railcraft item loader/unloaders for performance and stability  
 Reduced resource/energy requirements in several rocket recipes  
 Reduced requirements to unlock the Creative watering can: Now only 50/57 agricultural products is needed  
