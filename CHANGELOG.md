@@ -132,3 +132,10 @@ Reduced requirements to unlock the Creative watering can: Now only 50/57 agricul
 Removed baubles keybind by default  
 Fixed various bugs  
 Updated Just Extra Drags to 1.1.0  
+
+# 0.1.20 (Unreleased)
+Balance Mekanism-EU conversion:  
+- Now enabled, will unlock at chapter 5  
+- 80% efficiency  
+- Universal cable is reasonably priced for its EU conversion ability  
+- MEK machines supports EU now, but the 80% conversion rate still applies  
