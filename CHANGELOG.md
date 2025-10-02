@@ -139,7 +139,13 @@ Balance Mekanism-EU conversion:
 - 80% efficiency  
 - Universal cable is reasonably priced for its EU conversion ability  
 - MEK machines supports EU now, but the 80% conversion rate still applies  
+
 Removed unused tweak mods (EnderTweaker, BlockDropsTweaker)  
+
 Balance Acceleration Wand:  
 - Now costs 20000 RF per use
 - 5x cost when used by fake player (block placer, mechanical user, oc robot, etc.)
+
+Tweaked some recipes:
+- Industrial information panel now accepts all glass panes  
+- Mob Detector requires multimeter instead of the stage-locked observer  
