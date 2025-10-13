@@ -138,6 +138,7 @@ Balance Mekanism-EU conversion:
 - Now enabled, will unlock at chapter 5  
 - 80% efficiency  
 - Universal cable is reasonably priced for its EU conversion ability  
+  - Cables can't be upgraded by right-clicking, because of its new complex upgrading recipe
 - MEK machines supports EU now, but the 80% conversion rate still applies  
 
 Removed unused tweak mods (EnderTweaker, BlockDropsTweaker)  
@@ -149,3 +150,15 @@ Balance Acceleration Wand:
 Tweaked some recipes:
 - Industrial information panel now accepts all glass panes  
 - Mob Detector requires multimeter instead of the stage-locked observer  
+
+These recipes can now be viewed in JEI:
+- Forestry: Peat Engine, Biogas engine, Bio Generator (fuel)
+- Railcraft: Fluid Fueled Firebox (fuel), Steam Boiler (water to steam conversion), Worldspike (fuel)
+- Thermal: 
+  - Fluid conversion (the block converted by pyrotheum, cryotheum, petrotheum, and primal mana on contact)
+  - Arboreal Extractor (accepted trees, output fluid, and boosting fertilizers)
+- Immersive Engineering
+  - Diesel Generator (fuel)
+  - Mineral Deposits (Vein weight, dimensions, ores, chances, and average amount)
+- Galacticraft
+  - Arc furnace ore doubling recipes
