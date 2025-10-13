@@ -2,7 +2,7 @@
 https://www.curseforge.com/projects/1028308  
 Issues tracker for the Minetech Evolution modpack. Please submit bugs [here](https://github.com/Blue-Beaker/MinetechEvolution/issues).  
 Minetech Evolution整合包的故障跟踪器. 请在[此](https://github.com/Blue-Beaker/MinetechEvolution/issues)提交bug.  
-## Frequently Asked Queestions/常见问题
+## Frequently Asked Questions/常见问题
 A machine/block/item from some mod can't be found.  
 某模组的某个机器/方块/物品没有.  
 - If that can't be found in JEI, it's mostly locked behind a stage.  
