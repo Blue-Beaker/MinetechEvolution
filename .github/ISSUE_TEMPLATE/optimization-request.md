@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**Before opening the issue**
+**Checklist before opening the issue**
 - [ ] I've tested the optimization in my modpack instance.  
 - [ ] The optimization gives significant improvement(for performance optimizations at least ~10%).  
 - [ ] The optimization does not have incompatibility with any common platforms (Win/mac/linux, Intel/AMD CPUs, Intel/AMD/Nvidia GPUs)  
