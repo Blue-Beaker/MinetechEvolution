@@ -162,3 +162,8 @@ These recipes can now be viewed in JEI:
   - Mineral Deposits (Vein weight, dimensions, ores, chances, and average amount)
 - Galacticraft
   - Arc furnace ore doubling recipes
+
+Optimization:
+- Replaced Hesperus, fork from Phosphor with Alfheim, providing better lighting performance  
+- Updated MTE Patches to 1.7.0, providing distance-based culling for some complex rendering, such as items in pipes  
+- Added Entity Culling
