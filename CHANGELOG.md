@@ -134,23 +134,6 @@ Fixed various bugs
 Updated Just Extra Drags to 1.1.0  
 
 # 0.1.20 (Unreleased)
-Balance Mekanism-EU conversion:  
-- Now enabled, will unlock at chapter 5  
-- 80% efficiency  
-- Universal cable is reasonably priced for its EU conversion ability  
-  - Cables can't be upgraded by right-clicking, because of its new complex upgrading recipe
-- MEK machines supports EU now, but the 80% conversion rate still applies  
-
-Removed unused tweak mods (EnderTweaker, BlockDropsTweaker)  
-
-Balance Acceleration Wand:  
-- Now costs 20000 RF per use
-- 5x cost when used by fake player (block placer, mechanical user, oc robot, etc.)
-
-Tweaked some recipes:
-- Industrial information panel now accepts all glass panes  
-- Mob Detector requires multimeter instead of the stage-locked observer  
-
 These recipes can now be viewed in JEI:
 - Forestry: Peat Engine, Biogas engine, Bio Generator (fuel)
 - Railcraft: Fluid Fueled Firebox (fuel), Steam Boiler (water to steam conversion), Worldspike (fuel)
@@ -163,7 +146,30 @@ These recipes can now be viewed in JEI:
 - Galacticraft
   - Arc furnace ore doubling recipes
 
+Recipes:
+- Industrial information panel now accepts all glass panes  
+- Mob Detector requires multimeter instead of the stage-locked observer  
+- Added more fuel for Immersive Engineering's Diesel Generator
+
+Balance:
+- IC2 Solar Panel now outputs 4EU/t at day
+
+- Acceleration Wand:  
+  - Now costs 20000 RF in fast mode
+  - Cost increases for faster and fastest modes
+  - 5x cost when used by fake player (block placer, mechanical user, oc robot, etc.)
+
+- Higher conversion rate for Industrial Wires RF<->EU conversion (250EU->949RF, 512RF->121.5EU)  
+
+- Mekanism-EU conversion(inaccessible in survival for now because the later chapters are uncompleted):  
+  - Enabled
+  - Simple and high rate, 80% efficiency  
+  - Universal cable is reasonably priced for its EU conversion ability  
+    - Cables can't be upgraded by right-clicking, because of its new complex upgrading recipe
+  - MEK machines supports EU now, but the 80% conversion rate still applies  
+
 Optimization:
 - Replaced Hesperus, fork from Phosphor with Alfheim, providing better lighting performance  
 - Updated MTE Patches to 1.7.0, providing distance-based culling for some complex rendering, such as items in pipes  
-- Added Entity Culling
+- Added Entity Culling for culling entities and tileentities behind blocks  
+- Removed unused tweak mods (EnderTweaker, BlockDropsTweaker)  
