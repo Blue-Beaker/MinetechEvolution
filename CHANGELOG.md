@@ -134,6 +134,10 @@ Fixed various bugs
 Updated Just Extra Drags to 1.1.0  
 
 # 0.1.20 (Unreleased)
+Fixes:
+- Updated AE2UEL to 0.56.7, to fix various problems in 0.56.6, including the bug that interface doesn't extract items from network
+- Updated MTE patches, providing Multitool Compatibility fix, which prevents IE hammer, PR screwdriver, and IC2 wrench to consome the entire Omniwand/morph-o-tool on breaking  
+
 These recipes can now be viewed in JEI:
 - Forestry: Peat Engine, Biogas engine, Bio Generator (fuel)
 - Railcraft: Fluid Fueled Firebox (fuel), Steam Boiler (water to steam conversion), Worldspike (fuel)
@@ -154,6 +158,8 @@ Recipes:
 Balance:
 - IC2 Solar Panel now outputs 4EU/t at day
 
+- Increased work speed of some Immersive Engineering machines
+
 - Acceleration Wand:  
   - Now costs 20000 RF in fast mode
   - Cost increases for faster and fastest modes
@@ -170,6 +176,10 @@ Balance:
 
 Optimization:
 - Replaced Hesperus, fork from Phosphor with Alfheim, providing better lighting performance  
-- Updated MTE Patches to 1.7.0, providing distance-based culling for some complex rendering, such as items in pipes  
+- Updated MTE Patches, providing distance-based culling for some complex rendering, such as items in pipes  
 - Added Entity Culling for culling entities and tileentities behind blocks  
 - Removed unused tweak mods (EnderTweaker, BlockDropsTweaker)  
+
+QoL changes:
+- Added more information to some items
+- Allow pumpkins and fence gates to be placed without a block below  
