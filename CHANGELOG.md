@@ -133,7 +133,7 @@ Removed baubles keybind by default
 Fixed various bugs  
 Updated Just Extra Drags to 1.1.0  
 
-# 0.1.20 (Unreleased)
+# 0.1.20
 Fixes:
 - Updated AE2UEL to 0.56.7, to fix various problems in 0.56.6, including the bug that interface doesn't extract items from network
 - Updated MTE patches, providing Multitool Compatibility fix, which prevents IE hammer, PR screwdriver, and IC2 wrench to consome the entire Omniwand/morph-o-tool on breaking  
@@ -175,6 +175,7 @@ Balance:
   - MEK machines supports EU now, but the 80% conversion rate still applies  
 
 Optimization:
+- Replaced Clumps with Stackie (A prompt will show when loading old saves, that an xp_orb entity is removed, it's safe to load)
 - Replaced Hesperus, fork from Phosphor with Alfheim, providing better lighting performance  
 - Updated MTE Patches, providing distance-based culling for some complex rendering, such as items in pipes  
 - Added Entity Culling for culling entities and tileentities behind blocks  
