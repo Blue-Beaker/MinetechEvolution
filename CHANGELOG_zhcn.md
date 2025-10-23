@@ -1,4 +1,7 @@
 # 0.1.20
+
+#### 这个版本将 Clumps 替换为 Stackie, 当载入旧存档时会提示有一种实体被移除. 可以放心加载不会产生问题.
+
 修复:
 - 更新 AE2UEL 到 0.56.7, 修复 0.56.6 的各种问题, 包括ME接口不从网络抽取物品的问题
 - 更新 MTE patches, 提供多用工具兼容性修复, 防止 IE 工程师锤, PR 螺丝刀, 和 IC2 扳手损坏时使整个 Omniwand/morph-o-tool 物品消失.  
@@ -40,7 +43,7 @@
   - MEK 机器可使用 EU, 但 80% 转换效率仍存在  
 
 优化:
-- 将 Clumps 换成 Stackie (进入之前的存档会提示少一个实体, 继续加载即可, 没有问题)
+- 将 Clumps 换成 Stackie, 改善兼容性
 - 替换 Hesperus, Phosphor的分支 为 Alfheim, 改善光照性能  
 - 更新 MTE Patches, 对复杂渲染提供基于距离的剔除, 如管道内的物品  
 - 增加 Entity Culling 剔除方块后看不见的实体和方块实体  
