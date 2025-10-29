@@ -187,3 +187,5 @@ Optimization:
 QoL changes:
 - Added more information to some items
 - Allow pumpkins and fence gates to be placed without a block below  
+# 0.1.20-fix1
+Fixed accidental removal of inventory tweaks  
