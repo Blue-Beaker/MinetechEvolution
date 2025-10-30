@@ -189,3 +189,6 @@ QoL changes:
 - Allow pumpkins and fence gates to be placed without a block below  
 # 0.1.20-fix1
 Fixed accidental removal of inventory tweaks  
+# 0.1.20-fix2
+Replaced MouseTweaks Unofficial back with original MouseTweaks:  
+- The fork may accidentally transfer item when shift-clicking JEI + button  

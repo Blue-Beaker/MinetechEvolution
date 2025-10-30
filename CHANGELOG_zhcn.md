@@ -54,3 +54,6 @@
 - 允许在下方没有方块时放置南瓜和栅栏门  
 # 0.1.20-fix1
 修复意外移除InventoryTweaks
+# 0.1.20-fix2
+将 MouseTweaks Unofficial 换回原来的 MouseTweaks:  
+- Fork 版会在 shift点击 JEI + 号键时误转移物品  
