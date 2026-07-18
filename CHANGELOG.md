@@ -192,3 +192,31 @@ Fixed accidental removal of inventory tweaks
 # 0.1.20-fix2
 Replaced MouseTweaks Unofficial back with original MouseTweaks:  
 - The fork may accidentally transfer item when shift-clicking JEI + button  
+
+# 0.1.21
+A "major" minor update, preparing for 0.2, the next major update.  
+
+### Tutorials
+Introduce Unconfusion, a new mod for intuitive tutorials! More manual entries will be added in the future.  
+
+### Optimization
+Various optimizations and bugfixes from updated version of MTE Patches and MTE Galactic Tweaks. Most noticable optimizations:
+
+- Network Renderer Optimization from MTE Galactic Tweaks, significantly increasing FPS in a world with a lot of TileEntities. The original algorithm checks ALL loaded tiles in a world on every frame, and my optimized one only checks all tiles in nearby chunks on every client tick.  
+
+- Optimization for RFTools Modular Storage GUI from MTE Patches, 20FPS->50+. Limit crafting grid to only check when items changed, and skips rendering of internal hidden slots in RFTools GUIs.  
+
+- Tile Leak Fix from MTE Patches
+  - Remove TileEntities for blocks like Forestry Leaves that didn't mark as "hasTileEntity" correctly, on broken or replacement, for client-side  
+  - purges invalidated TileEntities periodically, to prevent the loadedTileEntities list growing over time from things like Forestry Trees in auto farms.  
+
+### Features
+- Let Thermal's Thermal Mediator accelerate following machines from these mods as well:
+  - Carpenter, Centrifuge, Fermenter, Squeezer, Still from Forestry
+  - Laser from BuildCraft
+
+- When hosting dedicated server, it's no longer needed to remove certain client-side mods  
+
+### Balance/Tweaking
+- Balance Ender IO generators, make them more useful  
+- Add more related items to set modes of ae2 p2p tunnels  
