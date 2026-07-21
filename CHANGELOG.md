@@ -193,8 +193,11 @@ Fixed accidental removal of inventory tweaks
 Replaced MouseTweaks Unofficial back with original MouseTweaks:  
 - The fork may accidentally transfer item when shift-clicking JEI + button  
 
-# 0.1.21
+# 0.1.21(UPCOMING)
 A "major" minor update, preparing for 0.2, the next major update.  
+
+### Breaking Changes
+Removed NotEnoughEnergistics as the main feature is included in AE2UEL. Forge will warn for missing registries but it's okay.  
 
 ### Tutorials
 Introduce Unconfusion, a new mod for intuitive tutorials! More manual entries will be added in the future.  
