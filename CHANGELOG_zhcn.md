@@ -1,3 +1,39 @@
+# 0.1.21(即将推出)
+一个较大的小更新, 为下个大更新0.2做准备.  
+
+### 破坏性改动
+移除 NotEnoughEnergistics ,因为 AE2UEL 自带其主要功能. Forge 会提示缺失注册表, 不会造成问题, 继续即可.  
+
+### 优化
+在新版本 MTE Patches 与 MTE Galactic Tweaks 中, 引入各种优化和bug修复.
+明显的优化:
+
+- MTE Galactic Tweaks 的 Network Renderer 优化, 在有大量方块实体的世界中显著改善FPS. 原算法每帧检查整个世界的所有方块实体, 我的优化算法只在每个客户端tick检查附近区块中的所有方块实体.
+
+- MTE Patches 的 RFTools 模块化存储器 GUI, 20FPS->50+. 让合成网格仅在物品变化时检查配方, 并跳过隐藏内部物品栏位的渲染.
+
+- MTE Patches 的方块实体泄漏修复
+  - 在客户端, 对于林业树叶等没有正确标记`hasTileEntity`的方块, 被破坏或替换时移除对应方块实体
+  - 定期清理"已无效化"的方块实体, 避免`loadedTileEntities`列表随时间无限增长, 比如在种植林业树的自动农场的情况下
+
+### 功能
+- 加入 Unconfusion, 一个用于直观教程的新模组! 更多手册条目会在将来加入.  
+
+- 让热力的外置散热器也可加速如下机器:
+  - 林业: 木工机, 离心机, 发酵机, 榨汁机, 蒸馏器
+  - BuildCraft: 激光
+
+- 设置专用服务端时, 不再需要移除某些'仅客户端'模组
+
+### 平衡/调整
+- 调整 Ender IO 发电机的平衡, 让它们更有用  
+- 使更多物品可以切换 AE2 P2P 通道的模式
+
+# 0.1.20-fix2
+将 MouseTweaks Unofficial 换回原来的 MouseTweaks:  
+- Fork 版会在 shift点击 JEI + 号键时误转移物品  
+# 0.1.20-fix1
+修复意外移除InventoryTweaks
 # 0.1.20
 
 #### 这个版本将 Clumps 替换为 Stackie, 当载入旧存档时会提示有一种实体被移除. 可以放心加载不会产生问题.
@@ -52,8 +88,3 @@
 易用性:
 - 为部分物品添加更多描述信息  
 - 允许在下方没有方块时放置南瓜和栅栏门  
-# 0.1.20-fix1
-修复意外移除InventoryTweaks
-# 0.1.20-fix2
-将 MouseTweaks Unofficial 换回原来的 MouseTweaks:  
-- Fork 版会在 shift点击 JEI + 号键时误转移物品  

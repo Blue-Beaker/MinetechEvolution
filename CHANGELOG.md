@@ -1,138 +1,39 @@
-# 0.1.0
-First alpha release Updated to Chapter II - only Chapter 1 and 2 are playable for now  
-# 0.1.1
-Added iron tanks and lan server properties  
-# 0.1.2
-Fixed crash when joining moon or using oxygen sealer by downgrading galacticraft Set stage of IC2 EXP items to prevent confusion in chapter 1  
-# 0.1.3
-Added some decoration blocks Added recipe for basalt and marble  
-# 0.1.4
-Added JustExtraDrags for QoL. Now it's possible to drag items from JEI to filter/marker slots in BC pipes, BC Autocrafter, RC machines and Forestry workbench without enabling the cheat mode  
-Turned off mipmap by default for performance  
-Fixed IC2 workbench recipe  
-Staged more IC2 items to because there's still some players confusing about disabled IC2 machines in chapter 1  
-# 0.1.4-fix1
-Fixed some IC2 recipes not shown in JEI. Fixed some fluid-related IC2 recipes eating container when using some containers.  
-# 0.1.5
-Added Backpack Display mod for QoL. Now some container items has a extra tooltip to show items in it!  
-Tweaked stage requirements of thermal suit because it's needed on the mars.  
-Updated MTE Tweaks:  
-- Boost your elytra with an attached IC2 jetpack by holding Forward + Jump!
-- Made thermal wrenches more universal.
-- Now startup time is shown on the customized main menu.
-# 0.1.6
-Added Backpack Opener mod. Now most handheld GUI items like backpacks, wireless terminals, manuals are able to open from inventory in one click!  
-Bug Fixes:  
+# 0.1.21(UPCOMING)
+A "major" minor update, preparing for 0.2, the next major update.  
 
-- MTE Patches:
-  - Fixed railcraft multiblock desync problem.
-  - Fixed railcraft turbine can be fixed for free.
+### Breaking Changes
+Removed NotEnoughEnergistics as the main feature is included in AE2UEL. Forge will warn for missing registries, it won't cause problems, just continue.  
 
-Informational:  
+### Optimization
+Various optimizations and bugfixes from updated version of MTE Patches and MTE Galactic Tweaks. Most noticeable optimizations:
 
-- Now shows all Microblock recipes in JEI
+- Network Renderer Optimization from MTE Galactic Tweaks, significantly increasing FPS in a world with a lot of TileEntities. The original algorithm checks ALL loaded tiles in a world on every frame, and my optimized one only checks all tiles in nearby chunks on every client tick.  
 
-Optimization:
+- Optimization for RFTools Modular Storage GUI from MTE Patches, 20FPS->50+. Limit crafting grid to only check when items changed, and skips rendering of internal hidden slots in RFTools GUIs.  
 
-- Added Stellar Core
-- Replaced Foamfix with Vintagefix.
+- Tile Leak Fix from MTE Patches
+  - Remove TileEntities for blocks like Forestry Leaves that didn't mark as `hasTileEntity` correctly, on broken or replacement, for client-side  
+  - purges invalidated TileEntities periodically, to prevent the `loadedTileEntities` list growing over time from things like Forestry Trees in auto farms.  
 
-New Quests, containing:
+### Features
+- Introduce Unconfusion, a new mod for intuitive tutorials! More manual entries will be added in the future.  
 
-- On a rail, which is a remake of the achievement of the same name in legacy versions of Minecraft.
-- Forgot to charge, which is a remake of the achievement in legacy versions of IC2.
+- Let Thermal's Thermal Mediator accelerate following machines from these mods as well:
+  - Carpenter, Centrifuge, Fermenter, Squeezer, Still from Forestry
+  - Laser from BuildCraft
 
-New QoL item:
+- When hosting dedicated server, it's no longer needed to remove certain client-side mods  
 
-- Hazmat Charm, which protects you from radiation, without the need to wear hazmat or quantum suits.
-# 0.1.7
-Added some materials and recipes for Chapter III  
-AE2 cells now displays its contents with BackpackDisplay  
-Added Better Split Stack mod. It gives you precise control over splitting item stacks!  
-Added Keybind Unconflict, and moved mode switch keys together in default config file  
-Reverted VintageFix to FoamFix  
-Fixed the energy crystal quest couldn't be completed  
-# 0.1.7-fix1
-Fixed a crash when riding minecart  
-# 0.1.8
-Fixed an item duplication for industrial foregoing  
-Added QoL feature: sneak to prevent over-mining when insta-mining Fix a NBT-related recipe issue  
-# 0.1.8-fix1
-Fixed a crash related to a MTEPatches tweak on BC Pipes  
-# 0.1.9
-Added links about the modpack into it.  
-Added a tutorial toast: Check the Quests.  
-Fixed MTE Tweaks causing crashes on dedicated server.  
-# 0.1.10
-Replaced GlobalGameRules with MTETweaks's new Default gamerules feature  
-Minor recipe tweaks  
-# 0.1.11
-Updated MTE Galactic Tweaks, added a QoL tweak to the slimeling GUI.  
-Added dedicated server support.  
-# 0.1.12
-Added compatible items to forestry backpacks  
-Fixed recipes staging  
-Fixed a bug in script
-Replaced GC buckets with forge ones because GC ones have bugs when stacked. Only affects filling fluids with buckets, Existing GC buckets are unaffected.  
-# 0.1.13
-Added various quests  
-Added a few recipes. Chapter 3 may by completable now, but it may have breaking changes before Minetech Evolution 0.2  
-Updated MTE Patches, including a better BC to FE adaptation  
-Replaced some unneeded mods  
-# 0.1.14
-Updated MTE Patches to include:  
-  ProjectRed - Breaking Speed Fix  
-  Forestry - MultiFarm Soil Replacement Fix  
-Added quit menu which asks for confirmation when quitting.  
-Updated JEI UU Assembler, providing info for IC2 crop production   
-Updated more mods  
-# 0.1.15
-Update BuildCraft  
-Update MTE Patches  
-Replace TOP with TOPCE  
-Added side quests for various items  
-# 0.1.16
-Updated MTE Patches to include:  
-  Storage Drawers QoL - Unmark slots  
-Added AppliedSync: better AE2-JEI search bar synchronization  
-Fixed a client-side crash for IC2 message fix  
-# 0.1.17
-Migrated most IC2 recipes to Crafttweaker, enhancing cross-mod compatibility  
-Hide some uncraftable recipes in the first chapter to prevent confusion  
-Updated MTE Galactic Tweaks to fix a savefile-crashing bug related to inventory size  
-Updated MTE Patches:
-- Crop stick trample prevention
-- Performance tweak for BoP
-- Fix Forestry's BC compat module  
+### Balance/Tweaking
+- Balance Ender IO generators, make them more useful  
+- Add more related items to set modes of AE2 P2P tunnels
+  
+# 0.1.20-fix2
+Replaced MouseTweaks Unofficial back with original MouseTweaks:  
+- The fork may accidentally transfer item when shift-clicking JEI + button  
 
-Added Electric Wrench (New)  
-Fixed Thermal machines doesn't render correctly on first launch of the Modpack  
-Fixed difficulty setting messing up with worlds  
-Added additional information when using cropnalyzer on crop sticks  
-
-# 0.1.18
-Fixed some railcraft recipes eating fluid containers  
-Updated forestry to fix broken carpenter crafting behaviour  
-
-# 0.1.18-fix1
-This version of server are compatible with 0.1.18 clients! However a client update is still encouraged as new recipes wont show in JEI if client is not up to date  
-Fix missing recipes caused by IC2 recipe migration in 0.1.17  
-Fix charged items crafting (hope this will no longer have bugs)  
-# 0.1.18-fix2
-When in multiplayer, this patch is only needed on server-side.  
-Fix inserting items to ProjectRed Filtered Importer causing crash  
-
-# 0.1.19
-Add Steve's Cart Reborn, unlocks at Chapter 2 but not required for the main chapter  
-Add Morph Overlay, QoL for Akashic Tome and Morph-O-Tool  
-Add Omniwand, a substitution of Morph-O-Tool  
-Patch railcraft item loader/unloaders for performance and stability  
-Reduced resource/energy requirements in several rocket recipes  
-Reduced requirements to unlock the Creative watering can: Now only 50/57 agricultural products is needed  
-Removed baubles keybind by default  
-Fixed various bugs  
-Updated Just Extra Drags to 1.1.0  
-
+# 0.1.20-fix1
+Fixed accidental removal of inventory tweaks  
 # 0.1.20
 
 #### This release have replaced Clumps with Stackie, A prompt will show when loading old saves, that a type of entity is removed. It's safe to load.
@@ -187,39 +88,138 @@ Optimization:
 QoL changes:
 - Added more information to some items
 - Allow pumpkins and fence gates to be placed without a block below  
-# 0.1.20-fix1
-Fixed accidental removal of inventory tweaks  
-# 0.1.20-fix2
-Replaced MouseTweaks Unofficial back with original MouseTweaks:  
-- The fork may accidentally transfer item when shift-clicking JEI + button  
+# 0.1.19
+Add Steve's Cart Reborn, unlocks at Chapter 2 but not required for the main chapter  
+Add Morph Overlay, QoL for Akashic Tome and Morph-O-Tool  
+Add Omniwand, a substitution of Morph-O-Tool  
+Patch railcraft item loader/unloaders for performance and stability  
+Reduced resource/energy requirements in several rocket recipes  
+Reduced requirements to unlock the Creative watering can: Now only 50/57 agricultural products is needed  
+Removed baubles keybind by default  
+Fixed various bugs  
+Updated Just Extra Drags to 1.1.0  
 
-# 0.1.21(UPCOMING)
-A "major" minor update, preparing for 0.2, the next major update.  
+# 0.1.18-fix2
+When in multiplayer, this patch is only needed on server-side.  
+Fix inserting items to ProjectRed Filtered Importer causing crash  
 
-### Breaking Changes
-Removed NotEnoughEnergistics as the main feature is included in AE2UEL. Forge will warn for missing registries but it's okay.  
+# 0.1.18-fix1
+This version of server are compatible with 0.1.18 clients! However a client update is still encouraged as new recipes wont show in JEI if client is not up to date  
+Fix missing recipes caused by IC2 recipe migration in 0.1.17  
+Fix charged items crafting (hope this will no longer have bugs)  
+# 0.1.18
+Fixed some railcraft recipes eating fluid containers  
+Updated forestry to fix broken carpenter crafting behaviour  
 
-### Tutorials
-Introduce Unconfusion, a new mod for intuitive tutorials! More manual entries will be added in the future.  
+# 0.1.17
+Migrated most IC2 recipes to Crafttweaker, enhancing cross-mod compatibility  
+Hide some uncraftable recipes in the first chapter to prevent confusion  
+Updated MTE Galactic Tweaks to fix a savefile-crashing bug related to inventory size  
+Updated MTE Patches:
+- Crop stick trample prevention
+- Performance tweak for BoP
+- Fix Forestry's BC compat module  
 
-### Optimization
-Various optimizations and bugfixes from updated version of MTE Patches and MTE Galactic Tweaks. Most noticable optimizations:
+Added Electric Wrench (New)  
+Fixed Thermal machines doesn't render correctly on first launch of the Modpack  
+Fixed difficulty setting messing up with worlds  
+Added additional information when using cropnalyzer on crop sticks  
 
-- Network Renderer Optimization from MTE Galactic Tweaks, significantly increasing FPS in a world with a lot of TileEntities. The original algorithm checks ALL loaded tiles in a world on every frame, and my optimized one only checks all tiles in nearby chunks on every client tick.  
+# 0.1.16
+Updated MTE Patches to include:  
+  Storage Drawers QoL - Unmark slots  
+Added AppliedSync: better AE2-JEI search bar synchronization  
+Fixed a client-side crash for IC2 message fix  
+# 0.1.15
+Update BuildCraft  
+Update MTE Patches  
+Replace TOP with TOPCE  
+Added side quests for various items  
+# 0.1.14
+Updated MTE Patches to include:  
+  ProjectRed - Breaking Speed Fix  
+  Forestry - MultiFarm Soil Replacement Fix  
+Added quit menu which asks for confirmation when quitting.  
+Updated JEI UU Assembler, providing info for IC2 crop production   
+Updated more mods  
+# 0.1.13
+Added various quests  
+Added a few recipes. Chapter 3 may by completable now, but it may have breaking changes before Minetech Evolution 0.2  
+Updated MTE Patches, including a better BC to FE adaptation  
+Replaced some unneeded mods  
+# 0.1.12
+Added compatible items to forestry backpacks  
+Fixed recipes staging  
+Fixed a bug in script
+Replaced GC buckets with forge ones because GC ones have bugs when stacked. Only affects filling fluids with buckets, Existing GC buckets are unaffected.  
+# 0.1.11
+Updated MTE Galactic Tweaks, added a QoL tweak to the slimeling GUI.  
+Added dedicated server support.  
+# 0.1.10
+Replaced GlobalGameRules with MTETweaks's new Default gamerules feature  
+Minor recipe tweaks  
+# 0.1.9
+Added links about the modpack into it.  
+Added a tutorial toast: Check the Quests.  
+Fixed MTE Tweaks causing crashes on dedicated server.  
+# 0.1.8-fix1
+Fixed a crash related to a MTEPatches tweak on BC Pipes  
+# 0.1.8
+Fixed an item duplication for industrial foregoing  
+Added QoL feature: sneak to prevent over-mining when insta-mining Fix a NBT-related recipe issue  
+# 0.1.7-fix1
+Fixed a crash when riding minecart  
+# 0.1.7
+Added some materials and recipes for Chapter III  
+AE2 cells now displays its contents with BackpackDisplay  
+Added Better Split Stack mod. It gives you precise control over splitting item stacks!  
+Added Keybind Unconflict, and moved mode switch keys together in default config file  
+Reverted VintageFix to FoamFix  
+Fixed the energy crystal quest couldn't be completed  
+# 0.1.6
+Added Backpack Opener mod. Now most handheld GUI items like backpacks, wireless terminals, manuals are able to open from inventory in one click!  
+Bug Fixes:  
 
-- Optimization for RFTools Modular Storage GUI from MTE Patches, 20FPS->50+. Limit crafting grid to only check when items changed, and skips rendering of internal hidden slots in RFTools GUIs.  
+- MTE Patches:
+  - Fixed railcraft multiblock desync problem.
+  - Fixed railcraft turbine can be fixed for free.
 
-- Tile Leak Fix from MTE Patches
-  - Remove TileEntities for blocks like Forestry Leaves that didn't mark as "hasTileEntity" correctly, on broken or replacement, for client-side  
-  - purges invalidated TileEntities periodically, to prevent the loadedTileEntities list growing over time from things like Forestry Trees in auto farms.  
+Informational:  
 
-### Features
-- Let Thermal's Thermal Mediator accelerate following machines from these mods as well:
-  - Carpenter, Centrifuge, Fermenter, Squeezer, Still from Forestry
-  - Laser from BuildCraft
+- Now shows all Microblock recipes in JEI
 
-- When hosting dedicated server, it's no longer needed to remove certain client-side mods  
+Optimization:
 
-### Balance/Tweaking
-- Balance Ender IO generators, make them more useful  
-- Add more related items to set modes of ae2 p2p tunnels  
+- Added Stellar Core
+- Replaced Foamfix with Vintagefix.
+
+New Quests, containing:
+
+- On a rail, which is a remake of the achievement of the same name in legacy versions of Minecraft.
+- Forgot to charge, which is a remake of the achievement in legacy versions of IC2.
+
+New QoL item:
+
+- Hazmat Charm, which protects you from radiation, without the need to wear hazmat or quantum suits.
+# 0.1.5
+Added Backpack Display mod for QoL. Now some container items has a extra tooltip to show items in it!  
+Tweaked stage requirements of thermal suit because it's needed on the mars.  
+Updated MTE Tweaks:  
+- Boost your elytra with an attached IC2 jetpack by holding Forward + Jump!
+- Made thermal wrenches more universal.
+- Now startup time is shown on the customized main menu.
+# 0.1.4-fix1
+Fixed some IC2 recipes not shown in JEI. Fixed some fluid-related IC2 recipes eating container when using some containers.  
+# 0.1.4
+Added JustExtraDrags for QoL. Now it's possible to drag items from JEI to filter/marker slots in BC pipes, BC Autocrafter, RC machines and Forestry workbench without enabling the cheat mode  
+Turned off mipmap by default for performance  
+Fixed IC2 workbench recipe  
+Staged more IC2 items to because there's still some players confusing about disabled IC2 machines in chapter 1  
+# 0.1.3
+Added some decoration blocks Added recipe for basalt and marble  
+# 0.1.2
+Fixed crash when joining moon or using oxygen sealer by downgrading galacticraft Set stage of IC2 EXP items to prevent confusion in chapter 1  
+# 0.1.1
+Added iron tanks and lan server properties  
+# 0.1.0
+First alpha release Updated to Chapter II - only Chapter 1 and 2 are playable for now  
