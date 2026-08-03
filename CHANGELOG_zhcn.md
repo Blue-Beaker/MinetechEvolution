@@ -1,8 +1,9 @@
-# 0.1.21(即将推出)
+# 0.1.21
 一个较大的小更新, 为下个大更新0.2做准备.  
 
 ### 破坏性改动
-移除 NotEnoughEnergistics ,因为 AE2UEL 自带其主要功能. Forge 会提示缺失注册表, 不会造成问题, 继续即可.  
+移除 NotEnoughEnergistics ,因为 AE2UEL 自带其主要功能, 且NEE会在样版终端中应用指定配方时导致崩溃. Forge 会提示缺失注册表, 不会造成问题, 继续即可.  
+更新许多mod. 修复一些bug, 但也可能出现新bug.  
 
 ### 优化
 在新版本 MTE Patches 与 MTE Galactic Tweaks 中, 引入各种优化和bug修复.
