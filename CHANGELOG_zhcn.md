@@ -4,6 +4,7 @@
 ### 破坏性改动
 移除 NotEnoughEnergistics ,因为 AE2UEL 自带其主要功能, 且NEE会在样版终端中应用指定配方时导致崩溃. Forge 会提示缺失注册表, 不会造成问题, 继续即可.  
 更新许多mod. 修复一些bug, 但也可能出现新bug.  
+更新了HadEnoughItems. 请删除`config/stellarcore_stitcher_cache_jei.dat`以重新为其贴图生成缓存, 否则+号按钮贴图会丢失.  
 
 ### 优化
 在新版本 MTE Patches 与 MTE Galactic Tweaks 中, 引入各种优化和bug修复.

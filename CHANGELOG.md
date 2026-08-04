@@ -4,6 +4,7 @@ A "major" minor update, preparing for 0.2, the next major update.
 ### Breaking Changes
 Removed NotEnoughEnergistics as the main feature is included in AE2UEL, and NEE causing crashes when applying certain recipes in the pattern terminal. Forge will warn for missing registries, it won't cause problems, just continue.  
 Updated various mods. Fixes some bugs but may create new ones.  
+Updated HadEnoughItems. Please remove `config/stellarcore_stitcher_cache_jei.dat` to regenerate texture caches for it, or the texture of '+' button will be missing.  
 
 ### Optimization
 Various optimizations and bugfixes from updated version of MTE Patches and MTE Galactic Tweaks. Most noticeable optimizations:
